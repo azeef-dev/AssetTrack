@@ -26,7 +26,7 @@ function Register() {
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
             await updateProfile(userCredential.user, { displayName: fullName });
             navigate("/dashboard");
-        } catch (err) {
+        } catch {
             setError("Something went wrong while creating your account. Please try again.");
         }
         setLoading(false);

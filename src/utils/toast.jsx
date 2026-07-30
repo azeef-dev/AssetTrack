@@ -13,7 +13,7 @@ export const showSuccessToast = (message) => {
                         : "opacity-0 -translate-y-6 scale-95"
                     }`}
             >
-                <div className="w-8 h-8 rounded-full bg-lime-500 flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 rounded-full bg-lime-500 flex items-center justify-center shrink-0">
                     <Check className="text-white" size={18} strokeWidth={3} />
                 </div>
                 <span className="text-[#3f3f46] text-[15px] font-medium font-poppins">
@@ -37,7 +37,7 @@ export const showErrorToast = (message) => {
                         : "opacity-0 -translate-y-6 scale-95"
                     }`}
             >
-                <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center shrink-0">
                     <X className="text-white" size={18} strokeWidth={3} />
                 </div>
                 <span className="text-[#3f3f46] text-[15px] font-medium font-poppins">

@@ -4,7 +4,7 @@ import { db } from "../firebase/config";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase/config";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/useAuth";
 import Sidebar from "../components/Sidebar";
 
 function Dashboard() {
@@ -46,8 +46,8 @@ function Dashboard() {
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-8">
                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center flex-shrink-0">
-                            <span className="text-lg">🛠️</span>
+                        <div className="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center shrink-0">
+                            <span className="text-lg">🛠️</span> 
                         </div>
                         <div>
                             <h1 className="text-lg font-bold text-slate-900 leading-tight">MaintainIQ</h1>

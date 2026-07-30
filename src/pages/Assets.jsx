@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { collection, addDoc, onSnapshot, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase/config";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/useAuth";
 import { QRCodeSVG } from "qrcode.react";
 import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
