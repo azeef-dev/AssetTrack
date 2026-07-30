@@ -84,7 +84,7 @@ function Register() {
 
                     {error && (
                         <div className="flex items-start gap-2 bg-red-50 border border-red-100 text-red-600 text-sm px-3 py-2.5 rounded-xl mb-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
                             </svg>
                             <span>{error}</span>
@@ -93,10 +93,12 @@ function Register() {
 
                     <form onSubmit={handleRegister} className="space-y-4">
                         <div>
-                            <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1.5">
+                            <label htmlFor="fullName" className="block text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1.5">
                                 Full Name
                             </label>
                             <input
+                                id="fullName"
+                                name="fullName"
                                 type="text"
                                 required
                                 value={fullName}
