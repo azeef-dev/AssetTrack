@@ -9,8 +9,8 @@ export const showSuccessToast = (message) => {
         (t) => (
             <div
                 className={`${baseStyle} transition-all duration-300 ${t.visible
-                        ? "opacity-100 translate-y-0 scale-100"
-                        : "opacity-0 -translate-y-6 scale-95"
+                    ? "opacity-100 translate-y-0 scale-100"
+                    : "opacity-0 -translate-y-6 scale-95"
                     }`}
             >
                 <div className="w-8 h-8 rounded-full bg-lime-500 flex items-center justify-center shrink-0">
@@ -33,8 +33,8 @@ export const showErrorToast = (message) => {
         (t) => (
             <div
                 className={`${baseStyle} transition-all duration-300 ${t.visible
-                        ? "opacity-100 translate-y-0 scale-100"
-                        : "opacity-0 -translate-y-6 scale-95"
+                    ? "opacity-100 translate-y-0 scale-100"
+                    : "opacity-0 -translate-y-6 scale-95"
                     }`}
             >
                 <div className="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center shrink-0">

@@ -159,7 +159,7 @@ function Login() {
                         </div>
 
                         <button
-                            type="submit"   
+                            type="submit"
                             disabled={loading}
                             className="w-full bg-slate-900 text-white py-3 rounded-xl font-semibold text-sm hover:bg-slate-800 active:scale-[0.99] transition-all duration-150 disabled:opacity-50 flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-slate-950/10"
                         >
