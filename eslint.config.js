@@ -17,5 +17,18 @@ export default defineConfig([
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
+    rules: {
+      // Standard "fetch on mount, then setState" is the normal data-fetching
+      // pattern used throughout this app and is not a bug.
+      'react-hooks/set-state-in-effect': 'off',
+    },
+  },
+  {
+    // shadcn-style ui primitives intentionally co-export a component and its
+    // cva() variants (e.g. Button + buttonVariants) from the same file.
+    files: ['src/components/ui/**/*.jsx'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
   },
 ])
